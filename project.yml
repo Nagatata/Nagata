@@ -1,0 +1,26 @@
+name: NagataAI
+options:
+  bundleIdPrefix: com.nagata
+  deploymentTarget:
+    iOS: "26.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    DEVELOPMENT_TEAM: ""
+targets:
+  NagataAI:
+    type: application
+    platform: iOS
+    sources:
+      - NagataAI
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nagata.NagataAI
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: NagataAI
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: 音声で話しかけるためにマイクを使います。
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: 話した言葉を文字に変換するために音声認識を使います。
+        INFOPLIST_KEY_NSContactsUsageDescription: 名前から電話番号を探すために連絡先を読み取ります。
+        INFOPLIST_KEY_NSCalendarsWriteOnlyAccessUsageDescription: 頼まれた予定をカレンダーに追加します。
